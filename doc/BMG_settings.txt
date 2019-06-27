@@ -1,0 +1,27 @@
+Block Memory Generator (8.4)
+
+Basic
+Interface Type: Native
+Memory Type: Simple Dual Port RAM
+
+Port A Options - Memory Size
+Port A Width: 32 -- Refers to a quartet of 8-bit signed filtered values.
+Port A Depth: 40000 -- Refers to 200*200 ifmaps
+Operating Mode: No Change
+Enable Port Type: Use ENA Pin
+
+Port B Options - Memory Size
+Port B Width: 32
+Port B Depth: 40000
+Operating Mode: Write First
+Enable Port Type: Use ENB Pin
+
+Port B Options - Optional Output Registers
+v Primitives Output Register
+
+Port B Options - Output Reset Options
+v RSTB Pin (set/reset pin)
+Outuput Reset Value (Hex): 0
+
+Other Options - Memory Initialization
+v Fill Remaining Memory Locations(Hex): 0
