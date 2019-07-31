@@ -157,12 +157,12 @@ By using a ZedBoard, the whole system allows the communication between the core 
 
 6.  Write the results, stored into the DDR, in a text file through the XSCT prompt by using these lines:
 
-   set logfile [open "your_MATLAB_directory\hw_results.txt" "w"]
+   	set logfile [open "your_MATLAB_directory\hw_results.txt" "w"]
 	
-   puts $logfile [mrd DDR_Dest_BaseAddr no_32bit_words] 
-   _where DDR_Dest_BaseAddr is the address associated to the 1st ofmap value, and no_32bit_word refers to the fmap area -200*200 = 40k      in this case-_
+   	puts $logfile [mrd DDR_Dest_BaseAddr no_32bit_words] 
+   	_where DDR_Dest_BaseAddr is the address associated to the 1st ofmap value, and no_32bit_word refers to the fmap area -200*200 = 	40k in this case-_
 	
-   close $logfile
+   	close $logfile
 	
 7. Open the text file and delete the address column (in this case, the final file is "hw_res_final.txt"). Hence, open the ASPP.m in MATLAB and run it. In the command window, "Correct results" will be printed to. Global Average Pooling results are printed to the serial window; you could verify their correct value by running the GAP.m.
 
